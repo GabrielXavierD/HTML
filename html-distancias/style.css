@@ -1,0 +1,20 @@
+#box {
+    background-color: #00FF00;
+    width: 320px;
+    height: 240px;
+
+    /*distancia da margem**/
+    margin-left: 50px;
+    margin-top: 100px; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    /**distancia entre a borda do elemento e o conteudo interno dele**/
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    /**colocando borda de 5 pixels em azul**/
+    border:5px solid blue;
+}

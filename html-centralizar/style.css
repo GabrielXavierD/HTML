@@ -1,0 +1,9 @@
+#box {
+    background-color: #dd0000;
+    width: 500px;
+    height: 500px;
+
+    /**valor de margem automatica/ elas centralizam**/
+    margin-left: auto;
+    margin-right: auto;
+}

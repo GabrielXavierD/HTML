@@ -1,0 +1,41 @@
+#cabecalho {
+	width: 800px;
+	height: 100px;
+	margin: auto; /**neste caso o margin está servindo para todos os lados(left, right etc.) 
+	o auto centraliza o elemento**/
+	border: 5px solid #FF0000; /**borda para enxergar a div**/
+}
+#menu {
+	width: 800px;
+	height: 20px;
+	margin: auto;
+	border: 5px solid #00FF00;
+	clear:both;
+}
+#container {
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	border: 5px solid #00FFFF;
+	clear: both;
+}
+#esquerda { /**como ela esta dentro da div, a largura e altura precisou ser menor**/
+	width: 190px;
+	height: 390px;
+	float: left; /**faz encaixar no espaço à esquerda(left) na div**/
+	border: 5px solid #00FF00;
+} 
+#central {
+	width: 590px;
+	height: 390px;
+	float: left;
+	border: 5px solid #0000FF;	
+} 
+#rodape {
+	width: 800px;
+	height: 100px;
+	margin: auto;
+	border: 5px solid #8B4B48;
+	clear: both;		
+} 
+
