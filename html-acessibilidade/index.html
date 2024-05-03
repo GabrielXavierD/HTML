@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<!--Conteúdo principal - geralmente há somente 1-->
+    <main>
+
+        <!--Cabeçalho - cria uma landmark nos leitores de tela se estiver fora das tags: main, article, section ou aside-->
+        <header>
+        
+        <!--Navegação-->
+        <nav aria-label="Titulo dessa nav"></nav>
+
+        </header>
+
+        
+        <!-- Agrupa o conteúdo em diversas regiões. Um article dividido em várias seções e não cria pontos de referencia automaticamente, então precisa de um aria-label ou aria-labelledby-->
+        <section></section>
+
+        <!-- Encapsula uma região de um site - Ex.: Sobre; postagem de um blog/rede social; uma lista de produtos -->
+        <article aria-labelledby="sobre">
+            <h2 id="sobre">Sobre a empresa</h2>
+        </article> 
+
+        <!--Conteúdo extra (Ex.: anuncio no canto da tela; em um blog, "posts relacionados")-->
+        <aside></aside>
+        
+        <!--Rodapé do site - cria uma landmark nos leitores de tela se estiver fora das tags: main, article, section ou aside--> -->
+        <footer></footer>
+        
+    </main>
+
+    <!-- 
+        Aria-label = nomeia/cria um ponto de referencia nos leitores de tela;
+
+        Aria-labelledby = serve para não repetir o mesmo texto nos leitores de tela e usa o ID do elem. filho pra evitar repetição. 
+            Ex.: article que envolve um h2 escrito "Sobre", caso escreva aria-label="Sobre" no article
+            o leitor de tela vai ler duas vezes o "Sobre" (o do aria-label do article e do h2)
+            para evitar isso, se coloca aria-labelledby="ID_do_elem_filho" no article
+        
+        Como verificar acessibilidade sem um leitor de tela?
+        Inspecionar -> 3 pontos (canto superior direito) -> acessibilidade = irá aparecer a árvore de acessibilidade com os pontos de referência
+        -->
+</body>
+
+</html>
