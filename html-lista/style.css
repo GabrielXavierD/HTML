@@ -1,0 +1,11 @@
+ul, ol{
+    list-style: none; /*Tirando as marcações*/
+    list-style: url(); /*Marcação com imagem*/
+    list-style: inside; /*Marcação será inside ou outside*/
+    list-style: url() inside; /*Marcação com imagem e posicionada internamente*/
+    list-style: lower-roman; /*Há vários estilos*/
+}
+
+dt, dd{
+    margin: 0px; /*não usa padding*/
+}
