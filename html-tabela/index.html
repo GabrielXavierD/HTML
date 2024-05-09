@@ -1,61 +1,70 @@
-<html lang="pt-br">
-    <head>
-          <meta charset="UTF-8">
-          <title> Tabela</title>
-    </head>
-    <body> 
-        <h3>Aluno: Gabriel Xavier Domingues - 2º Ano Téc. Inf</h3>
-        <h3>Enunciado:<br>
-            <br>1 - Adicione mais um aluno na tabela. 
-            <br>2 - Adicione uma linha para frequência dos alunos.</h3>
-            <br><h3> Tabela</h3>
-        <table border>
-        <tr>
-            <th>ALUNOS</th>  
-            <td>João</td>
-            <td>Pedro</td>
-            <td>Gabriel</td>
-        </tr>
-        <tr>
-            <th>NOTAS</th>
-            <td>9,5</td>
-            <td>8,5</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <th>FREQUÊNCIA</th>
-            <td>95%</td>
-            <td>85%</td>
-            <td>100%</td>
-        </tr>
-         </table>
-        <br><h3>3 - Inverta a disposição da tabela para que na primeira linha apareça os títulos: ALUNOS, NOTAS, FREQUÊNCIA</h3>
-            <br><h3>Tabela:</h3>
-            <table border>
-            <tr>
-                <th>ALUNOS</th>
-                <th>NOTAS</th>
-                <th>FREQUÊNCIA</th>
-            </tr>
-                <tr><td>João</td>
-                <td>9,5</td>
-                <td>95%</td>
-             </tr> 
-            <tr>
-                <tr><td>Pedro</td>
-                <td>8,5</td>
-                <td>85%</td>
-             </tr> 
-             <tr>
-                <tr><td>Gabriel</td>
-                <td>10</td>
-                <td>100%</td>
-             </tr> 
-                
-                
-            
-            </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-    </body>
+    <table border="2" width="100%">
+        <tr> 
+            <th >PREÇO</th> <!--th = cabeçalho da tabela-->
+            <th>PESO</th>
+            <th>LARGURA</th> 
+        </tr>
+        <tr> <!--tr = linhas da tabela-->
+            <td>R$ 12,99</td> <!--td = dados da tabela | coluna-->
+            <td>1Kg</td> 
+            <td>40cm</td>
+        </tr>
+        <tr>
+            <td>IMAGEM</td> 
+            <td colspan="3"><img src="fundo1.jpg" alt="" width="100%"></td> <!--colspan = num. de colunas a ocupar = extensão da coluna-->
+        </tr>
 
+        <tr>
+            <td rowspan="2">TESTE</td> <!--rowspan = num. de colunas a ocupar = extensão da linha-->
+            <td>TESTE 2</td>
+            <td>TESTE 3</td>
+        </tr>
+        <tr>
+            <td>TESTE 5</td>
+            <td>TESTE 6</td>
+        </tr>
+    </table>
+
+<br>
+
+    <table border="2">
+        <tr> <!--tr = linhas da tabela-->
+            <td>A</td> <!--td = dados da tabela | coluna-->
+            <td>a</td> 
+        </tr>
+        <tr> 
+            <td>B</td> 
+            <td>b</td> 
+        </tr>
+        <tr> 
+            <td>C</td>
+            <td>c</td>  
+        </tr>
+    </table>
+<br>
+
+
+    <table border="2">
+        <tr> <!--tr = linhas da tabela-->
+            <td>A</td> <!--td = dados da tabela | coluna-->
+            <td>B</td>
+            <td>C</td> 
+        </tr>
+        <tr> 
+            <td>a</td> 
+            <td>b</td> 
+            <td>c</td>
+        </tr>
+    </table>
+</body>
 </html>
