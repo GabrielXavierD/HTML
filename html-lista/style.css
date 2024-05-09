@@ -1,4 +1,4 @@
-ul, ol{
+#li1{
     list-style: none; /*Tirando as marcações*/
     list-style: url(); /*Marcação com imagem*/
     list-style: inside; /*Marcação será inside ou outside*/
@@ -9,3 +9,4 @@ ul, ol{
 dt, dd{
     margin: 0px; /*não usa padding*/
 }
+
