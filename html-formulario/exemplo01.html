@@ -1,16 +1,113 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
-    <head>
+<head>
     <meta charset="UTF-8">
     <title>Componentes para Formuláro</title>
-    </head>
-    <body><h3>Campos para formulário</h3>
-    <form>
+</head>
+
+<body>
+
+    <h3>Campos para formulário</h3>
+    <form action="processa.php">
         <label>Usuário: </label><br><!-- um rotulo informando o q eu vou digitar na seguência(usuario)-->
-        <input type="text"><br> <!-- tipo text, o usuario vai digitar aqui-->
+        <input type="text" name="usuario"><br> <!-- tipo text, o usuario vai digitar aqui-->
         <label>Senha: </label><br><!-- um rotulo informando o q eu vou digitar na seguência(a senha)-->
-        <input type="password"><br> <!-- tipo password-->
+        <input type="password" name="senha"><br> <!-- tipo password-->
+
         <button>Enviar</button> <!-- Botão que vai enviar os dados-->
-    </body>
+        <input type="button" value="Botão"> <!--Botão pelo input-->
+        <input type="submit" value="Submit"> <!--Btn Submit pelo input-->
+    </form>
+
+    <br>
+
+    <h3>Campos checkbox e radio button</h3>
+    <form>
+        <label>Atividades de interesse: </label><br>
+        <input type="checkbox">Música<br> <!--caixinha de checkbox(quadradinho, várias alternativas)-->
+        <input type="checkbox">Esportes<br>
+        <input type="checkbox">Séries<br>
+        <br>
+        <label>Sexo: </label><br>
+        <input type="radio" name="sexo" value="Masculino">Masculino<br>
+        <!--campos de seleção radial (de bolinha, selecionar uma alternativa)-->
+        <!--radio, serve para somente uma alternativa, para fazer parte da mesma pergunta tem q ter o mesmo name, ex: name="sexo"-->
+        <!--Como RADIO tem o mesmo NAME para os 2 - p/ saber qual dado foi passado precisa colocar value="Dado a se passar"-->
+        <input type="radio" name="sexo" value="Feminino">Feminino<br>
+        <button>Responder</button><!--Botão-->
+    </form>
+
+    <br>
+
+    <h3>Conhecendo a tag button</h3>
+    <form>
+        <label>Nome: </label>
+        <input value="Gabriel"><br><!-- a tag value="" serve para dar o valor inicial do formulario, quando a pessoa resetar/iniciar a pagina, já vai começar com esses valores na página.-->
+        <label>Telefone: </label>
+        <input value="0000000"><br> <!-- quando não tem o atributo type, ele vira automaticamente type="text" -->
+        <input size="1" maxlength="2"><!--size = tamanho do input e maxlength = max. de caracteres a serem escritos-->
+        <button type="reset">Limpar</button><!-- botão para apagar/resetar/voltar o estado inicial do formulario-->
+    </form>
+    <br>
+
+    <h3>Usando o botão para disparar um evento</h3>
+    <button onclick="alert('Exemplo de Evento')">Clique aqui.</button><!--É um popup de uma mensagem, uma janelinha com uma mensagem-->
+    <br>
+
+    <h3>Pesquisa no Google</h3>
+    <form method="get" action="http://google.com/search"> <!-- os dados do formulario serao enviados para a pagina do google, ira pesquisar pela pagina do google e assim fazendo a pesquisa-->
+        <label>Digite algo: </label>
+        <input name="q"> <!--o parametro "q" serve para o google reconhecer que é uma pesquisa//o "q" é um termo de pesquisa do google.-->
+        <button type="submit">Pesquisar</button><!--botão com o tipo submit, pega os dados e vai para a pagina do google-->
+    </form>
+    <br>
+    <h3>Componente textarea</h3>
+    <form>
+        <label>Descrição</label><br>
+        <textarea rows="5" cols="80"></textarea><!--É indicado para um texto, mais longo/comentario no site-->
+        <!--textarea=(area de texto) com 5 linhas e 80 colunas//rows= num. de linhas | cols= num. de colunas-->
+    </form>
+
+
+    <h3>Caixa de seleção(caixa dropdown ou communbox)</h3>
+    <form>
+        <label>Marcas: </label><br>
+        <select name="marcas"><!--caixa de seleção(tipo uma lista, só pode escolher uma opção) -->
+            <option value="fiat">Fiat</option><!--as opções da caixa de seleção-->
+            <option value="ford">Ford</option><!--só pode escolher uma opção-->
+            <option value="volkswagen">Volkswagen</option>
+            <option value="renault">Renault</option>
+            <option value="chevrolet">Chevrolet</option>
+        </select>
+    </form>
+
+    <br>
+    <h3>Agrupando campos</h3>
+    <form>
+        <fieldset><!--agrupa os campos/ cria grupos, agrupa/+ organizado-->
+            <legend>Dados Pessoais</legend><!--Dá um título/rotulo para os campos/grupos...-->
+            <label>Nome: </label>
+            <input><br>
+            <label>E-mail: </label>
+            <input><br>
+            <label>Telefone: </label>
+            <input><br>
+            <button>Cadastrar</button>
+        </fieldset><!--acaba aquiu o primeiro grupo-->
+        <br>
+
+        <fieldset><!--começa aqui o segundo grupo-->
+            <legend>Formação</legend>
+            <label>Nome: </label>
+            <input><br>
+            <label>E-mail: </label>
+            <input><br>
+            <label>Telefone: </label>
+            <input><br>
+            <button>Cadastrar</button>
+        </fieldset><!--acaba aqui o segundo grupo-->
+        <br>
+    </form>
+</body>
 
 </html>
