@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--[if lt IE 9]>
+	<script src="html5shiv.js"></script>
+    <![endif]-->
+
+    <title>Acessibilidade e Compatibilidade</title>
+</head>
+<body>
+    
+    <!-- Algumas tags são novas, então podem acabar sendo ñ compativeis
+    com alguns navegadores (e podem ser substituidas por JS por exemplo)-->
+
+        <form action="">
+            <label for="nome">Nome</label>
+            <!-- Obrigatorio =  required="required" (mais compativel) ou required -->
+            <!-- Foco automatico =  autofocus="autofocus" ou autofocus -->
+            <input type="text" name="nome" id="nome" required autofocus="autofocus">
+            
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required="required">
+           
+            <br><br>
+           
+            <label for="numero">Numero</label>
+            <!-- Min = minimo de caracteres; Max = maximo de caracteres; Step = de quanto em quanto -->
+            <input type="number" name="numero" id="numero" min="5" max="20" step="5">
+          
+            <br><br>
+           
+            <label for="url">Url</label>
+            <!-- Inserir uma url com http ou https -->
+            <!-- Placeholder = texto dentro do input, o que é pro usuario fazer -->
+            <input type="url" name="url" id="url" required="required" placeholder="Ex.: https://www.exemplo.com">
+
+            <br><br>
+
+            <label for="pesquisa">Search/Pesquisa</label>
+            <!-- Realizar uma pesquisa -->
+            <input type="search" name="search" id="pesquisa" required="required">           
+
+            <br><br>
+            
+            <label for="range">Range</label>
+            <!-- Range é novo, então talvez não funcione em alguns navegadores -->
+            <!-- Value = valor fixo -->
+            <input type="range" name="range" id="range" min="1" max="20" value="6">
+           
+            <br><br>
+            
+            <label for="data">Data</label>
+            <!-- Data é novo, então talvez não funcione em alguns navegadores/ geralmente feito em JS -->
+            <input type="data" name="data" id="data">
+
+            <br><br>
+            
+            <label for="cor">Color</label>
+            <!-- Color é novo, então talvez não funcione em alguns navegadores/ geralmente feito em JS -->
+            <input type="color" name="color" id="color">
+            
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+
+</body>
+</html>

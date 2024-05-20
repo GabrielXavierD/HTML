@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--[if lt IE 9]>
+	<script src="html5shiv.js"></script>
+    <![endif]-->
+
+    <title>Acessibilidade e Compatibilidade</title>
 </head>
 
 <body>
     
+
+     
+<!--Alguns navegadores em versões antigas, como o internet explorer, podem não interpretar
+    corretamente essas tags, então é preciso usar o HTML Shiv 
+    exemplo ali em cima criando e usando o arquivo (criar o arquivo evita alguns problemas, 
+    como: se o link original cair, vc tem o arquivo)
+
+    As linhas são comentadas, pois assim os outros navegadores ignoram e
+    somente o Internet Explorer <9 reconhece;
+
+    links: https://github.com/aFarkas/html5shiv - mais usado - 
+           (juntar setas) original:       
+
+           Se for anterior ao Internet Explorer 9 faça:
+           <!--[if lt IE 9]>
+	            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+                <![endif] - ->
+
+
+           https://cdnjs.com/libraries/html5shiv (exemplo usando só o link)
+
+        <!--[if lt IE 9]>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif] - ->  
+
+           -->
+
+
+
 <!--Conteúdo principal - geralmente há somente 1-->
     <main>
 
